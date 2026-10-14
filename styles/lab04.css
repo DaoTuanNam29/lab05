@@ -1,0 +1,95 @@
+/*
+filename: lab04.css
+author: Dao Tuan Nam
+created: 07/10/2026
+last modified: 07/10/2026
+description: Styles for lab04.html
+*/
+
+/* Universal selector: default font and colour for all elements */
+* {
+    font-family: calibri, sans-serif;
+    color: #2F4F4F;
+}
+
+/* Page layout (smaller text and margins to match the sample page) */
+body {
+    font-size: 0.8em;
+    margin: 1.5em 3em;
+}
+
+/* Heading 1 */
+h1 {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Heading 2: RGB colour, bold, 1.5 times standard size */
+h2 {
+    color: rgb(0, 128, 128);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Group selector: italic text */
+aside, footer {
+    font-style: italic;
+}
+
+/* Group selector: headings use arial */
+h1, h2, h3 {
+    font-family: arial, sans-serif;
+}
+
+/* Group selector: table borders */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* ID selectors */
+#images {
+    text-align: center;
+}
+
+#headings {
+    color: red;
+}
+
+/* Class selectors */
+.special {
+    color: darkorange;
+    font-weight: bold;
+}
+
+.month-heading {
+    text-align: right;
+}
+
+/* Menu bar: line under the menu */
+nav {
+    padding-bottom: 0.8em;
+    border-bottom: 2px solid #2F4F4F;
+    margin-bottom: 0.8em;
+}
+
+/* Contextual selectors */
+nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ccc;
+}
+
+ol ul {
+    list-style-type: square;
+}
+
+/* Pseudo classes */
+aside:hover {
+    display: none;
+}
+
+nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
